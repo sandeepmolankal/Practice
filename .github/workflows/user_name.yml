@@ -1,0 +1,9 @@
+name: Print user name
+on: push
+
+jobs:
+  show-usernames:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Display GitHub Actor
+        run: echo "Triggered by ${{ github.actor }}"
