@@ -11,4 +11,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print entered username
-        run: 'echo "username entered: ${{ github.event.inputs.username }}"'
+        run: 'echo username entered: ${{ github.event.inputs.username }}"'
