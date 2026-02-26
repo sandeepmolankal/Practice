@@ -1,9 +1,14 @@
 name: Print user name
-on: push
+on: 
+    workflow_dispatch:
+        inputs:
+            username:
+                description: "Please enter your username"
+                required: true
 
 jobs:
   show-usernames:
     runs-on: ubuntu-latest
     steps:
-      - name: Display GitHub Actor
-        run: echo "Triggered by ${{ github.actor }}"
+      - name: Print entered username
+        run: echo "username entered: ${{ github.event.inputs.username }}"
