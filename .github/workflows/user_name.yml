@@ -1,10 +1,10 @@
 name: Print user name
 on: 
-    workflow_dispatch:
-        inputs:
-            username:
-                description: "Please enter your username"
-                required: true
+  Workflow_dispatch:
+    inputs:
+        username:
+            description: "Please enter your username"
+            required: true
 
 jobs:
   show-usernames:
